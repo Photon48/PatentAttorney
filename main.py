@@ -160,10 +160,10 @@ def truncate_responses(specific_responses, ordered_numbers):
             'claimsText': claims_text,
             'abstractText': abstract_text
         }
-    print("-------------------")
-    print("Truncated Specific Responses")
-    print(truncated_specific_responses)
-    print("-------------------")
+    # print("-------------------")
+    # print("Truncated Specific Responses")
+    # print(truncated_specific_responses)
+    # print("-------------------")
     return truncated_specific_responses
 
 def write_analysis(truncated_specific_responses):
@@ -191,7 +191,7 @@ def write_analysis(truncated_specific_responses):
         analysis += "--------------------\n"
 
     # Write the analysis string to a file
-    with open('analysis.txt', 'w') as f:
+    with open('analysis.txt', 'w', encoding='utf-8') as f:
         f.write(analysis)
 
 def run_analysis():

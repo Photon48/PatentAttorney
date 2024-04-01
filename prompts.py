@@ -19,7 +19,9 @@ def generate_keyword_prompt(context):
 
         Instructions for Task Completion:
         - Your output should be in JSON format.
-        - Generate 30 search keywords with 2-5 words in each keyword. call JSON 'keywords'
+        - Generate 15 search keywords with 2-5 words in each keyword. call JSON 'keywords'
+        - Generate 15 search keywords with 1-2 very descriptive (NOT topic broad) technical words (e.g UV-C, photocatalytic, hormone polypeptides, glyphosate-resistant, CRISPR-Cas9 ). Put in same JSON as 'keywords'.
+        - Make sure the 1-2 word kkeywords are NOT topic broad (like 'solar panel' or 'battery', 'biomedical' etc.)
         - Make sure the keywords are specific to what the context may specifically be patenting, not the general topic of the context.
         - Include technical terms in keywords where appropriate.
         - If A keyword does not align with the context, it will be considered as a wrong keyword.

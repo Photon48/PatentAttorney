@@ -58,6 +58,7 @@ def final_analysis():
   )
     try:
       analysis_output = json.loads(response.choices[0].message.content)
+      print(analysis_output)
             # Start formatting the Markdown text
       markdown_output = "# Current Patent Analysis\n\n"
 
