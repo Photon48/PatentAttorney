@@ -214,15 +214,17 @@ def run_analysis():
 #_______________________________________________________________________________________________________________________
 # Streamlit
 st.title("Patent Attorney")
-st.write("This application simulates the behavior of a Patent Attorney Agent that can analyze patent disputes.")
+st.write("This application takes in potential patent ideas and checks for disputes and infringement with existing patents.")
 
 # Add instructions for user in streamlit
-st.write("Please enter your potential patent's descriptive title here:")
+st.write("Please enter your patent's descriptive title:")
+st.write("Example: *Water Purification System Utilizing UV-C LED Photocatalytic Disinfection*")
+
 # User input for patent title
 patent_title = st.text_input("Patent Title", max_chars=250)
 
 # User input for patent abstract
-st.write("Please enter your potential patent's abstract and more specific info here (500 word limit):")
+st.write("Please enter your patent's abstract. Make sure to include EXACTLY what you are patenting. Dont be afraid of technical terms. **More specifics = better output.**")
 patent_abstract = st.text_area("Patent Abstract", max_chars=5000)
 
 patent_context = patent_title + " " + patent_abstract
