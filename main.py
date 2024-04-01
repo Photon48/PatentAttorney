@@ -213,7 +213,7 @@ def run_analysis():
 
 #_______________________________________________________________________________________________________________________
 # Streamlit
-st.title("Patent Attorney Agent")
+st.title("Patent Attorney")
 st.write("This application simulates the behavior of a Patent Attorney Agent that can analyze patent disputes.")
 
 # Add instructions for user in streamlit
