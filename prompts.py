@@ -19,8 +19,7 @@ def generate_keyword_prompt(context):
 
         Instructions for Task Completion:
         - Your output should be in JSON format.
-        - Generate 30 search keywords with 2-5 words in each keyword. some will be only 2 words long. call JSON 'keywords'
-        - Make sure that between keywords, your changing wording, keeping semantic meaning the same, to maximise the chances of finding the right patents.
+        - Generate 30 search keywords with 2-5 words in each keyword. call JSON 'keywords'
         - Make sure the keywords are specific to what the context may specifically be patenting, not the general topic of the context.
         - Include technical terms in keywords where appropriate.
         - If A keyword does not align with the context, it will be considered as a wrong keyword.
