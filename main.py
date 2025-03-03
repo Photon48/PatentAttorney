@@ -9,8 +9,8 @@ from collections import Counter
 # OAuth details
 def get_access_token():
     token_url = "https://test.api.ipaustralia.gov.au/public/external-token-api/v1/access_token"
-    client_id = "yxiwJi97i0uovRanXopKmeKVVVWHekdq"
-    client_secret = "FGpr0TT760VZQowop3t1UeDJdyzYSRdF3V67KfCJpLf2H5Ab4FNkUeCOBEitWKjd"
+    client_id = "<Your_IP_australia_client_id_here>"
+    client_secret = "<Your_IP_australia_client_secret_here>"
 
     # Prepare the auth credentials
     auth = (client_id, client_secret)
